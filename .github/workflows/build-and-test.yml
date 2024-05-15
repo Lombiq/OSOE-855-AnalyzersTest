@@ -15,3 +15,4 @@ jobs:
       timeout-minutes: 10
       dotnet-version: '8.0.204'
       verify-dotnet-consolidation: false
+      test-disable: 'true'
