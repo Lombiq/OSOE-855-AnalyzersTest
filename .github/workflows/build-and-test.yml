@@ -16,3 +16,4 @@ jobs:
       dotnet-version: '8.0.300'
       verify-dotnet-consolidation: false
       test-disable: 'true'
+      cancel-workflow-on-failure: 'false'
