@@ -13,6 +13,6 @@ jobs:
     uses: Lombiq/GitHub-Actions/.github/workflows/build-and-test-dotnet.yml@dev
     with:
       timeout-minutes: 10
-      dotnet-version: '8.0.204'
+      dotnet-version: '8.0.300'
       verify-dotnet-consolidation: false
       test-disable: 'true'
