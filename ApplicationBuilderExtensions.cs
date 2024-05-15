@@ -19,24 +19,8 @@ namespace Lombiq.AnalyzersTest
                 context.Response.OnStarting(() =>
                 {
                     var setCookie = context.Response.Headers[setCookieHeader];
-                    if (setCookie.Count == 0)
-                    {
-                        return Task.CompletedTask;
-                    }
-
                     var newCookies = new List<string>(capacity: setCookie.Count);
-                    var changed = false;
-
-                    foreach (var cookie in setCookie)
-                    {
-                        var newCookie = cookie;
-                        newCookies.Add(newCookie);
-                    }
-
-                    if (changed)
-                    {
-                        context.Response.Headers[setCookieHeader] = new StringValues(newCookies.ToArray());
-                    }
+                    context.Response.Headers[setCookieHeader] = new StringValues(newCookies.ToArray());
 
                     return Task.CompletedTask;
                 });
