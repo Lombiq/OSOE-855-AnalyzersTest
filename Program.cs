@@ -1,13 +1,13 @@
-﻿List<string> list =
-[
+﻿var list = new List<string>
+{
     "one",
     "two",
-    "three",
-];
+    "three"
+};
 
-string[] array = list.ToArray();
+var array = list.ToArray();
 
-foreach (string item in array)
+foreach (var item in array)
 {
     Console.WriteLine(item);
 }
