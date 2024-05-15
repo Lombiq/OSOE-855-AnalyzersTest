@@ -1,0 +1,4 @@
+is_global = true
+global_level = 0
+
+dotnet_analyzer_diagnostic.category-Style.severity = warning
